@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Forms in webpage</title>
+    <h1>sample form</h1>
+</head>
+<body style="font-size: 20px">
+    <form action="Form.html" target="_blank" method="get">
+        First name:<br>
+        <input type ="text" required name="login"  placeholder="Your full name"><br>
+        <!-- Last name : <br> -->
+        <label>Last name:</label><br/>
+        <input type="text" name="Nname"><br>
+        <input type="hidden" name="loc" value="India">
+        Father's name :<br>
+        <input type="text" name="Father name" value="Mr." placeholder="Your Father's name"><br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" >Female<br>
+        Enter DOB :<br>
+        <input type="date" name="dob" placeholder="dd-mm-yyyy"><br>
+        Value <br> 
+        <input type="range" name="val" min="0" max="50"><br>
+        Select any color : <br>
+        <input type="checkbox" name="color1" value="red"> Red <br>
+        <input type="checkbox" name="color2" > Green <br>
+        <input type="checkbox" name="color3"  checked> White <br>
+        password :<br> 
+        <input type="password" id="pwd" name="pwd">
+        <input type="submit" autofocus><br>
+        <!-- <input type="submit" ><br> -->
+        <select name="select">
+            <option value="value1">Option 1</option>
+            <option value="value2" >Option 2</option>
+            <option >OPtion 3</option>
+        </select>
+        <select name="select" multiple>
+            <option value="value1">Option 1</option>
+            <option value="value2" >Option 2</option>
+            <option value="value3">OPtion 3</option>
+        </select>
+        <select name="select" size="2">
+            <option value="value1">Option 1</option>
+            <option value="value2" >Option 2</option>
+            <option value="value3">Option 3</option>
+            <option value="value4">Option 4</option>
+        </select>
+        <select>
+            <optgroup label="Books">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            </optgroup>
+            <optgroup label="Snippets">
+            <option value="git">Git</option>
+            <option value="java">Java</option>
+            </optgroup>
+        </select>
+        <textarea placeholder="Type here..."></textarea>
+        <textarea rows="10" cols="20" placeholder="type here...."></textarea>
+        <fieldset>
+            <legend>DETAILS:</legend>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+        </fieldset>
+        <button type="submit">
+            <img src="images/logo.png" alt="Learn HTML" height="20" width="40"/>
+            Submit
+        </button>
+    </form>
+    <video controls>
+        <source src="cn.mp4" type="video/mp4">
+        <source src="cn.wmv" type="video/wmv">
+        Your browser does not support the video tag.
+    </video>
+    <video controls autoplay muted>
+        <source src="cn.mp4" type="video/mp4">
+        <source src="cn.wmv" type="video/wmv">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="cn.avi" type="audio/avi">
+        <source src="cn.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <iframe width="400" height="200"
+    src="https://www.youtube.com/embed/wDiI2PGNPVI">
+    </iframe>
+    
+</body>
+</html>
